@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WALKING CLUB - ADMIN PANEL - CREATE NEW ANNOUNCEMENT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Walking club administration panel</h1>
+    </header>
+    <nav>
+        <a href="admin.html">WALK EVENTS</a>
+        <a href="o_events.html">OTHER EVENTS</a>
+        <a href="members.html">MEMBERSHIP</a>
+        <a href="news.html">NEWS</a>
+        <a href="announcement.html" class="active_tab">ANNOUNCEMENTS</a>
+    </nav>
+    <main>
+        <p class="description">NEW ANNOUNCEMENT</p>
+        <form action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post">
+            <fieldset>
+                <div class="form-group">
+                    <label for="first_name">Title:</label><Br>
+                    <input id="first_name" name="first_name" type="text" />
+                </div>
+                <div class="form-group">
+                    <label>Announcement</label>
+                    <textarea name="ann_text" rows="12"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="file">Choose a file</label>
+                    <input type="file" id="file" name="myFile">
+                </div>
+                <div class="form-group">
+                    <label for="first_name">Time of announce:</label><Br>
+                    <p><input id="ann_time" name="ann_time" type="text" /></p>
+                    <p><br /><button>SEND</button></p>
+                </div>
+            </fieldset>
+            <input type="hidden" id="sessionID" name="sessionID" value="1234abcd-5678-9090-efef">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; WALKING CLUB 2021</p>
+    </footer>
+</body>
+</html>
