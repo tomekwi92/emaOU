@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+/*
+font-family: 'Ubuntu', sans-serif;
+font importet from online google fonts library
+*/
+
+/*STYLES RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*OVERWRITE SETTINGS FOR WHOLE PAGE*/
+html {
+    font-size: 10px;
+    max-width: 1024px;
+    margin: auto;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+
+/*LINK SETTINGS
+USED FOR NAVIGATION MENU
+*/
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+
+a:visited {
+    color: black;
+}
+
+
+a:hover {
+    color: black;
+}
+
+
+a:active {
+    color: black;
+}
+
+/*NAVIGATION MENU SETTINGS*/
+nav {
+    text-align: left;
+    max-width: 1024px;
+    margin: auto;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #555;
+    padding: 10px;
+    margin: 10px 20px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: black;
+    background-color: royalblue;
+}
+
+nav a.active_tab {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: royalblue;
+    padding: 10px;
+    margin: 0px 20px;
+    transition: .3s;
+}
+
+nav a.active_tab:hover {
+    background-color: royalblue;
+    color: #eee;
+    border-color: royalblue;
+}
+
+/*HEADER SETTINGS*/
+
+header {
+    height: 20vh;
+    background-size: cover;
+    background-image: url(image.jpg);
+}
+
+header h1 {
+    line-height: 20vh;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+/*MAIN SETTINGS*/
+main {
+    max-width: 1024px;
+    margin: 5vh auto;
+    font-size: 0;
+    padding: auto;
+}
+
+main p.description {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 0px 30px 50px 30px;
+    line-height: 180%;
+}
+
+/*FOOTER SETTINGS*/
+footer {
+    background-color: black;
+    max-width: 1024px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding: 2rem, 0;
+    font-size: 2rem;
+}
+
+/*FORM SETTINGS*/
+form {
+    background-color: #eee;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    width: 1024px;
+    margin: auto;
+    max-width: 1024px;
+}
+
+fieldset {
+    margin-bottom: 0.5rem;
+}
+
+legend {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.form-group {
+    display: block;
+    margin: 0.5rem;
+}
+
+.form-group label {
+    display: inline-block;
+    box-sizing: inherit;
+    min-width: 10rem;
+    max-width: 100%;
+    font-size: 2rem;
+}
+
+.form-group textarea {
+    width: 100%;
+}
+
+.form-wrap label {
+    margin-bottom: 0.5rem;
+}
+
+.form-inline label {
+    min-width: 0;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+button {
+    height: 5rem;
+    width: 15rem;
+}
+
+
+/************************************************************************
+*FOLLOWING SETTINGS ARE RESPONSIBLE FOR SITE DISPLAYED ON MOBILE DEVICES*
+*AS INSTRUCTED, SETTINGS ARE PERMANENTLY BLOCKED AT 375px WIDE          *
+*FOLLOWING INSTRUCTIONS ARE BASICALLY COPY OF PREVIOUS SETTINGS WITH    *
+*SOME MINOR CHANGES                                                     *
+************************************************************************/
+
+
+@media only screen and (max-width: 375px) {
+
+    .checkbox,
+    .prompt {
+        display: block;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    html {
+        font-size: 10px;
+        max-width: 375px;
+        margin: auto;
+    }
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        flex-grow: 1;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:link {
+        color: black;
+    }
+
+    a:visited {
+        color: black;
+    }
+
+    /*NAV*/
+    nav {
+        text-align: center;
+        max-width: 375px;
+        margin: auto;
+        text-transform: capitalize;
+        padding: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: auto;
+        font-size: 1.5rem;
+        font-family: 'Ubuntu', sans-serif;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #555;
+        padding: 2px;
+        margin: 2px 4px;
+        transition: .3s;
+    }
+
+    nav a.active_tab {
+        display: inline-block;
+        font-size: 1.5rem;
+        font-family: 'Ubuntu', sans-serif;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: royalblue;
+        padding: 2px;
+        margin: 0px 4px;
+        transition: .3s;
+    }
+
+    nav a:hover {
+        background-color: white;
+        color: royalblue;
+        border-color: white;
+    }
+
+    nav a.active_tab:hover {
+        background-color: white;
+        color: royalblue;
+        border-color: white;
+    }
+
+    header {
+        height: 10vh;
+        background-size: cover;
+        background-image: url(image.jpg);
+    }
+
+    header h1 {
+        line-height: 10vh;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 50%);
+    }
+
+    /*MAIN*/
+    main {
+        max-width: 375px;
+        margin: 5vh auto;
+        font-size: 0;
+        padding: auto;
+    }
+
+    form {
+        background-color: #eee;
+        padding: 2px;
+        box-sizing: border-box;
+        width: 375px;
+        margin: auto;
+        max-width: 375px;
+    }
+
+    fieldset {
+        margin-bottom: 0.3rem;
+    }
+
+    legend {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .form-group {
+        display: block;
+        margin: 0.5rem;
+    }
+
+    .form-group label {
+        display: inline-block;
+        box-sizing: inherit;
+        min-width: 1rem;
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .form-group textarea {
+        width: 100%;
+    }
+
+    .form-wrap label {
+        margin-bottom: 0.3rem;
+    }
+
+    .form-inline label {
+        min-width: 0;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    button {
+        height: 5rem;
+        width: 15rem;
+        font-size: 1rem;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: black;
+        font-size: 8px;
+    }
+}
